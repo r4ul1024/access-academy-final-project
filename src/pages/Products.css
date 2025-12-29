@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.products-page {
+  width: 100%;
+  background-color: #FFFFFF;
+  min-height: calc(100vh - 100px);
+}
+
+.products-header {
+  background: linear-gradient(135deg, #123E56 0%, #1a5a7d 100%);
+  padding: 80px 130px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.products-header h1 {
+  font-family: 'Cardo', serif;
+  font-size: 56px;
+  margin-bottom: 15px;
+}
+
+.products-header p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.products-container {
+  padding: 80px 130px;
+}
+
+@media (max-width: 768px) {
+  .products-header {
+    padding: 50px 20px;
+  }
+
+  .products-header h1 {
+    font-size: 36px;
+  }
+
+  .products-header p {
+    font-size: 14px;
+  }
+
+  .products-container {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-header {
+    padding: 30px 15px;
+  }
+
+  .products-header h1 {
+    font-size: 24px;
+  }
+
+  .products-container {
+    padding: 30px 15px;
+  }
+}

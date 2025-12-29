@@ -1,0 +1,145 @@
+.footer {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 50px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 150px;
+  padding-bottom: 70px;
+  background-color: #123E56;
+}
+
+.footer > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.contact-info {
+  display: grid;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    font-family: 'Cardo', serif;
+    font-size: 50px;
+}
+
+.footer-logo p {
+    color: #ffffff;
+}
+
+.footer-logo span {
+    color: #DE8556;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: left;
+}
+
+.footer-text p {
+    color: #b3b3b3;
+    font-size: 16px;
+    font-family: "plus Jakarta Sans", sans-serif;
+}
+
+.footer-info {
+  display: grid;
+}
+
+.footer-info-item {
+  display: flex ;
+  gap: 20px;
+  color: #DE8556;
+}
+
+.footer-info-item div img {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding-left:150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 50px;
+  }
+  
+  .footer-logo {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-info-item {
+    gap: 30px;
+  }
+  
+  .footer-info-item p {
+    font-size: 14px;
+        margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-text p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-info-item {
+    gap: 15px;
+  }
+  
+  .footer-info-item p {
+    font-size: 12px;
+  }
+} 

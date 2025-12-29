@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.about {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* HERO SECTION */
+.about-hero {
+  width: 100%;
+  background: linear-gradient(135deg, #123E56 0%, #1a5a7d 100%);
+  padding: 80px 130px;
+  color: #FFFFFF;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-content h1 {
+  font-family: 'Cardo', serif;
+  font-size: 56px;
+  margin-bottom: 15px;
+}
+
+.about-hero-content p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* MAIN ABOUT SECTION */
+.about-main {
+  padding: 100px 130px;
+  background-color: #F6F6F6;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-family: 'Cardo', serif;
+  font-size: 42px;
+  color: #38343D;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-family: 'Cardo', serif;
+  font-size: 42px;
+  color: #DE8556;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* VALUES SECTION */
+.about-values {
+  padding: 100px 130px;
+  background-color: #FFFFFF;
+}
+
+.about-values h2 {
+  font-family: 'Cardo', serif;
+  font-size: 48px;
+  color: #38343D;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  padding: 30px;
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  font-family: 'Cardo', serif;
+  font-size: 22px;
+  color: #DE8556;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 50px 20px;
+    min-height: 280px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+  }
+
+  .about-main,
+  .about-values {
+    padding: 50px 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .stat h3 {
+    font-size: 28px;
+  }
+
+  .about-values h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 30px 15px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 24px;
+  }
+
+  .about-main,
+  .about-values {
+    padding: 30px 15px;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+  }
+
+  .about-stats {
+    gap: 15px;
+  }
+
+  .stat h3 {
+    font-size: 24px;
+  }
+
+  .stat p {
+    font-size: 12px;
+  }
+
+  .values-grid {
+    gap: 15px;
+  }
+
+  .value-card {
+    padding: 15px;
+  }
+
+  .value-card h3 {
+    font-size: 18px;
+  }
+
+  .value-card p {
+    font-size: 12px;
+  }
+}

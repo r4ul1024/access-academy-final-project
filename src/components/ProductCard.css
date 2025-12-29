@@ -1,0 +1,124 @@
+.product-card {
+    min-width: 300px;
+    min-height: 400px;
+    border: 1px solid #6b7280;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.product-card:hover {
+    box-shadow: 0px 5px 8px 1px rgb(170, 170, 170);
+}
+
+.product-image{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.product-title {    
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 0px 20px;
+}
+
+.product-desc {
+  margin-top: 10px;
+  color: #6b7280;
+      padding: 0px 20px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+      padding: 0px 20px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #DE8556;
+}
+
+.product-add {
+    background-color: #fff;
+    width: 125px;
+    height: 45px;
+    color: #DE8556;
+    border: 2px solid #DE8556;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ========== МОБИЛЬНАЯ ВЕРСИЯ PRODUCT CARD (АДАПТИВ) ========== */
+
+/* Планшеты и мобильные: максимум 768px */
+@media (max-width: 768px) {
+  
+  /* PRODUCT CARD - Адаптивные размеры */
+  .product-card {
+    min-width: unset;
+    min-height: unset;
+    width: 100%;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  .product-desc {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  
+  .product-footer {
+    margin-top: 20px;
+  }
+  
+  .product-add {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+/* ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ: максимум 480px */
+@media (max-width: 480px) {
+  
+  .product-card {
+    min-width: unset;
+    padding: 12px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  
+  .product-desc {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+  }
+  
+  .product-add {
+    width: 80px;
+    height: 35px;
+    font-size: 11px;
+  }
+}

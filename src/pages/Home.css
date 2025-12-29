@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+
+
+/* ---------------------------------------- HERO (YAZAN AI DEYIL)--------------------------------------- */
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #123E56;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 40px;
+    padding-left: 150px;
+}
+
+.hero > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media (min-width: 1660px) {
+    .hero {
+        max-width: 1400px;
+    }
+}
+
+.text {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text h1 {
+    font-family: 'Cardo', serif;
+    font-size: 56px;
+    color: #FFFFFF;
+}
+
+.text p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.text button {
+    width: 168px;
+    height: 54px;
+    background-color: #DE8556;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+}
+
+.text button:hover {
+    cursor: pointer;
+    background-color: #C76B3C;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+/* ---------------------------------------- 2 --------------------------------------- */
+
+
+.info {
+    padding: 150px;
+}
+
+
+.info > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.info-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.info-text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info h2 {
+    font-family: 'Cardo', serif;
+    font-size: 38px;
+    color: #38343D;
+}
+
+.info p {
+    color: #818181;
+}
+
+
+
+/* ---------------------------------------- Featured Properties --------------------------------------- */
+
+
+.featured-properties {
+    padding: 150px;
+}
+
+.featured-properties > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.feature-properties-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.feature-properties-header h2 {
+    font-size: 38px;
+    color: #38343D; 
+    font-family: "Cardo", serif;
+} 
+
+.feature-properties-header a {
+    text-decoration: none;
+    color: #123E56;  
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* ---------------------------------------- VIDEO --------------------------------------- */
+
+.video {
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px;
+}
+
+.video > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.video-text {
+    display: grid;
+    place-items: center; 
+    justify-content: center;
+    gap: 12px; 
+    margin-bottom: 20px;
+}
+
+.video-text h2 {
+    font-family: 'Cardo', serif;
+    font-size: 48px;
+    color: #0f172a;
+}
+
+.video-text p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.video-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ---------------------------------------- OUT SERVICE --------------------------------------- */
+
+.out-service {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 150px;
+}
+
+.out-service > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.out-service-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+} 
+
+.out-service-header h2 {
+    font-family: 'Cardo', serif;
+    font-size: 48px;
+    color: #38343D;
+}
+
+.out-service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.out-service-card {
+    border: 1px solid #bbbbbb;
+    border-radius: 12px;
+    display: grid;
+    justify-content: center;
+    padding: 40px;
+    gap: 25px;
+}
+
+.out-service-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out-service-card div div {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #F2DFD5;
+}   
+
+.out-service-card h2 {
+    font-size: 24px;
+    color: #38343D;
+    text-align: center;
+}
+
+.out-service-card p {
+    font-size: 14px;
+    color: #38343D;
+    text-align: center;
+}
+
+
+/* ---------------------------------------- POTFFOLIO --------------------------------------- */
+
+.our-portfolio {
+    width: 100%;
+    display: grid;
+        padding: 150px;
+}
+
+.our-portfolio > * {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.our-portfolio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.our-portfolio-header h2 {
+    font-family: 'Cardo', serif;
+    font-size: 48px;
+    color: #38343D;
+}
+
+.our-portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.our-portfolio-images div img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+
+/* ========== АДАПТИВ ========== */
+
+
+@media (max-width: 1024px) {
+  
+  .product-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-content {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .info-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .out-service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .our-portfolio-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0 15px;
+    align-items: center;
+    justify-items: center;
+    gap: 0;
+  }
+
+  .info {
+    padding: 0 15px;
+  }
+  
+  .text {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .text h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+  
+  .text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .text button {
+    align-self: center;
+    margin-top: 10px;
+  }
+  
+  .text hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+  }
+  
+  .image {
+    display: none !important;
+  }
+  
+  .stats {
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .stats p {
+    font-size: 18px;
+    flex: 0 0 auto;
+  }
+  
+
+  .info-content {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    margin-top: 50px;
+    gap: 0px;
+  }
+
+  .info-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-text h2 {
+    font-size: 28px;
+  }
+  
+  .info-text p {
+    font-size: 13px;
+  }
+  
+  .featured-properties {
+    padding: 50px 20px 0 20px;
+  }
+  
+  .feature-properties-header {
+    margin-bottom: 30px;
+  }
+  
+  .feature-properties-header h2 {
+    font-size: 28px;
+  }
+  
+  .product-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  
+
+  .video {
+    padding: 50px 20px 0 20px;
+  }
+  
+  .video-text h2 {
+    font-size: 28px;
+  }
+  
+  .video-text p {
+    font-size: 12px;
+  }
+  
+  .video-container {
+    margin-bottom: 30px;
+  }
+  
+
+  .out-service {
+    padding: 50px 20px;
+  }
+  
+  .out-service-header h2 {
+    font-size: 28px;
+  }
+  
+  .out-service-cards {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  
+  .out-service-card {
+    padding: 25px;
+  }
+  
+
+  .our-portfolio {
+    padding: 50px 20px;
+  }
+  
+  .our-portfolio-header h2 {
+    font-size: 28px;
+  }
+  
+  .our-portfolio-images {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  
+  :root {
+    --page-side: 15px;
+  }
+  
+  .hero {
+    padding: 0 15px;
+  }
+  
+  .text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+  
+  .text h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .text p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .text button {
+    width: 140px;
+    height: 45px;
+    font-size: 13px;
+  }
+  
+  .stats {
+    gap: 30px;
+  }
+  
+  .stats p {
+    font-size: 16px;
+  }
+  
+  .info {
+    padding: 0 15px;
+  }
+  
+  .info-text h2 {
+    font-size: 22px;
+  }
+  
+  .featured-properties {
+    padding: 30px 15px 0 15px;
+  }
+  
+  .feature-properties-header h2 {
+    font-size: 22px;
+  }
+  
+  .video {
+    padding: 30px 15px 0 15px;
+  }
+  
+  .video-text h2 {
+    font-size: 22px;
+  }
+  
+  .out-service {
+    padding: 30px 15px;
+  }
+  
+  .out-service-header h2 {
+    font-size: 22px;
+  }
+  
+  .out-service-card h2 {
+    font-size: 18px;
+  }
+  
+  .our-portfolio {
+    padding: 30px 15px;
+  }
+  
+  .our-portfolio-header h2 {
+    font-size: 22px;
+  }
+}

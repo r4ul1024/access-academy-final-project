@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #123E56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
+}
+
+.logo {
+    width: 85px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cardo', serif;
+    font-size: 24px;
+}
+
+.logo p  {
+    color: #FFFFFF;
+}
+
+.logo span {
+    color: #DE8556;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #DE8556;
+}
+
+.cart button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: #ffffff54;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.cart button:hover {
+    cursor: pointer;
+    background-color: #ffffff7a;
+}
+
+/* СЧЕТЧИК ТОВАРОВ В КОРЗИНЕ */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #DE8556;
+    color: #FFFFFF;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #123E56;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+/* ========== МОБИЛЬНАЯ ВЕРСИЯ HEADER (АДАПТИВ) ========== */
+
+/* Планшеты и мобильные: максимум 768px */
+@media (max-width: 768px) {
+  
+  /* АДАПТИВ HEADER - Уменьшаем padding и скрываем навигацию */
+  header {
+    padding: 0 20px;
+    height: 80px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 28px;
+    font-size: 20px;
+  }
+  
+  /* НАВИГАЦИЯ СКРЫТА ПО УМОЛЧАНИЮ */
+  nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #123E56;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    z-index: 999;
+  }
+  
+  /* ПОКАЗЫВАЕМ МЕНЮ КОГДА ОТКРЫТО (класс 'open') */
+  nav.open {
+    display: flex !important;
+  }
+  
+  nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* ПОКАЗЫВАЕМ БУРГЕР МЕНЮ НА МОБИЛЯХ */
+  .burger {
+    display: flex !important;
+  }
+  
+  /* АНИМАЦИЯ БУРГЕР МЕНЮ - Трансформация иконки при открытии */
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+  
+  .cart button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ: максимум 480px */
+@media (max-width: 480px) {
+  
+  header {
+    padding: 0 15px;
+    height: 70px;
+  }
+  
+  .logo {
+    width: 60px;
+    font-size: 18px;
+  }
+  
+  /* МЕНЮ НА ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНАХ */
+  nav {
+    top: 70px;
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  nav a {
+    padding: 8px 0;
+    font-size: 13px;
+  }
+  
+  .burger span {
+    width: 20px;
+    height: 2px;
+  }
+  
+  .cart button {
+    width: 30px;
+    height: 30px;
+  }
+}
